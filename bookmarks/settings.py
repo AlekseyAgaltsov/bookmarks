@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fa-=u@mmboezp1^vkpjs2m0#=1yiunte-z^@q76z)=^4#ro)cf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -128,11 +128,11 @@ LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-#
-# MEDIA_URL = 'media/'
-# MEDIA_ROOT = BASE_DIR / 'media'
-#
-# AUTHENTICATION_BACKENDS = [
-#     'django.contrib.auth.backends.ModelBackend',
-#     'account.authentication.EmailAuthBackend',
-# ]
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend',
+]
