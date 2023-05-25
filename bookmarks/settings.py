@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fa-=u@mmboezp1^vkpjs2m0#=1yiunte-z^@q76z)=^4#ro)cf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -140,3 +140,8 @@ AUTHENTICATION_BACKENDS = [
     # 'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.google.GoogleOAuth2',
 ]
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '55687606592-07vk7ng2dref4rjpub9igenficcvtv4i.apps.googleusercontent.com' # Google Client ID
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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' # Google Client Secret
+
+# python manage.py runserver_plus --cert-file cert.crt
